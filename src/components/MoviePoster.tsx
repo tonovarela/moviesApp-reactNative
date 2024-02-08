@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image, StyleSheet } from 'react-native'
+import { View,  Image, StyleSheet } from 'react-native'
 import { Movie } from '../interfaces/movie.interface'
 
 interface Props {
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
             width: 0,
             height: 10,
         },
-        shadowOpacity: 0.44,
+        shadowOpacity: 0.24,
         shadowRadius: 7,
-        elevation: 16
+        elevation: 10
     }
 })
