@@ -1,8 +1,11 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import { DetailScreen, HomeScreen } from '../screens';
 
+import { RouteStackScreen } from './types/RouteStack.type';
 
-const Stack = createStackNavigator();
+
+
+const Stack = createStackNavigator<RouteStackScreen>();
 
 export const Navigation = () => {
   return (
