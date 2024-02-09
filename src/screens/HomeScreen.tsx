@@ -1,11 +1,10 @@
 import React from 'react'
-import { ActivityIndicator, Dimensions, View, FlatList, Text, ScrollView } from 'react-native'
-import { useNavigation } from '@react-navigation/core'
-import { useMovies } from '../hooks/useMovies'
+import { ActivityIndicator, Dimensions, View, ScrollView } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 import Carousel from 'react-native-snap-carousel';
 import { HorizontalSlider,MoviePoster } from '../components'
+import { useMovies } from '../hooks'
 
 const { width: windowWith } = Dimensions.get('window');
 
