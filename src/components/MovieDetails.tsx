@@ -23,7 +23,7 @@ export const MovieDetails = ({ cast, movieFull }: Props) => {
                         -{movieFull.genres.map((item) => item.name).join(",")}</Text>
                 </View>
                 <Text>{movieFull.release_date.substring(0,4)}</Text>
-                <Text style={{ fontSize: 25, marginTop: 10, fontWeight: 'bold' }}>
+                <Text style={{ fontSize: 25, marginTop: 10,marginBottom:5, fontWeight: 'bold' }}>
                     Sinopsis
                 </Text>
                 <Text style={{ fontSize: 14 }}>
