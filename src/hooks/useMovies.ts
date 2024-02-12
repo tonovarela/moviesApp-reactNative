@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import movieDB from "../api/movieDB"
 
 import { Movie, ResponseMovieResponse } from "../interfaces/movie.interface"
+
 
 interface MoviesState {
     nowPlaying: Movie[];
@@ -10,7 +11,7 @@ interface MoviesState {
     upComing: Movie[];
 }
 export const useMovies = () => {
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(true)    
      const [errorNetwork, seterrorNetwork] = useState(false)
     const [moviesState, setMoviesState] = useState<MoviesState>({
         nowPlaying: [],
@@ -39,6 +40,9 @@ export const useMovies = () => {
                     upComing: respUpcoming.data.results,
                 }
             )
+            
+        
+
             setIsLoading(false);
         }catch(error){
             seterrorNetwork(true);
